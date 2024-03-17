@@ -1,0 +1,54 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-container {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 1.7vw;
+    width: 18rem;
+  }
+  
+  .card-img-top {
+    height: 400px; 
+    object-fit: cover; 
+  }
+  
+  .card-title{
+    font-family: "great vibes",sans-serif;
+    font-size: 2.2vw;
+    text-align: center;
+    color:#c99550; 
+  }
+
+  .card-text{
+    font-family: "Merriweather",sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    color: #396141;
+    padding: 20px 20px;
+  }
+
+  .btn-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+
+
+  .prod-container h1 {
+    font-family:"Merriweather",sans-serif;
+    color:#396141;
+    padding-top:3vw;
+    font-size: 2.4vw;
+  }
