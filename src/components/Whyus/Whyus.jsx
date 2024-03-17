@@ -1,5 +1,7 @@
 const Whyus = () => {
-    return (  );
+    return (
+        <h1>Why us?</h1>
+    );
 }
 
 export default Whyus;
