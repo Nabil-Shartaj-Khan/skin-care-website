@@ -16,6 +16,7 @@ import Location from './components/Location/Location'
 import Login from "./components/UserAction/Login/Login";
 import NotFound from "./NotFound";
 import Register from "./components/UserAction/Register/Register";
+import ShowService from "./components/Service/ShowService";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         </>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/show_service" element={<ShowService />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

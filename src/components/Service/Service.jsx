@@ -6,6 +6,7 @@ import woman from "../../assets/images/woman.jpg";
 import man from "../../assets/images/man.jpg";
 import womenPkg from "../../assets/images/package.jpg";
 import men from "../../assets/images/menpkg.jpg";
+import { Link } from 'react-router-dom';
 
 const Service = () => {
     const services = [
@@ -22,7 +23,7 @@ const Service = () => {
             <h1 className='grid-header'>Grooming Gauntlet :<span className='grid-span'> Explore Our Offerings! </span></h1>
             <div className="grid-container">
                 {services.map((service, index) => (
-                    <div className="grid-item" key={index}>
+                    <Link to={'/show_service'} key={index} className="grid-item">
                         <img src={service.image} alt={service.title} className="about-image" />
                         <div className="grid-overlay">
                             <h2>{service.title}</h2>
@@ -31,7 +32,7 @@ const Service = () => {
                         <div className="initial-text">
                             <p className='initial-text-p'>{service.title}</p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

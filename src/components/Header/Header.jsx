@@ -16,9 +16,12 @@ const Header = () => {
                     </div>
                     <div className='text-div'><img src={logo} alt="Logo" className="logo" /></div>
                     <div className='icon-container'>
+
                         <Link to="/login">
                             <img src={profile} alt="Profile" />
+
                         </Link>
+
                         <span onClick={() => { alert("This is the Cart") }}><img src={cart} alt="Cart" /></span>
                     </div>
                 </div>
