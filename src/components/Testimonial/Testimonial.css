@@ -1,0 +1,59 @@
+/* Testimonial.css */
+.testimonial-holder{
+    
+    background-color: #e0dac9;
+}
+
+
+.testimonial-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 4vw 2vw;   
+    background-size: cover;
+    background-position: center;
+}
+
+.test-title {
+    padding-top: 40px;
+    font-size: 4vw;
+    font-family: "great vibes",sans-serif;
+    text-align: center;
+    color: #696154;
+}
+
+.testimonial-card {
+    text-align: center;
+    padding: 30px;
+    background-color: #e6e5e0;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.test-span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.para-test{
+    font-size: 1.1vw;
+    font-family: "Merriweather",sans-serif;
+    color: #6c7964;
+    
+
+}
+
+.testimonial-card p {
+    font-family: "Lato",sans-serif;
+    font-size: 17px;
+}
+
+.testimonial-card hr {
+    border: 2px solid #8f8989;
+    margin: 20px 0;
+}
+
+.test-name {
+    font-family: "great vibes",sans-serif;
+    font-size: 30px;
+}

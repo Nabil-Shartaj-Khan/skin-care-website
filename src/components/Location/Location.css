@@ -1,0 +1,105 @@
+.location-container {
+    margin-left: 20vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    max-width: 60%;
+    
+}
+
+.flex-it {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+.contact-details span {
+
+    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.contact-details div {
+    margin-bottom: 5px;
+}
+
+.business-hours {
+    margin-top: 20px;
+    color: #396141;
+}
+
+.business-hours span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Lato",sans-serif;
+    color: #867357;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.business-hours div {
+    margin-left: 30px;
+}
+
+.business-hours div div {
+    margin-top: 5px;
+}
+
+.contact h3{
+    padding-top: 80px;
+    padding-left: 80px;
+    font-family: 'great vibes',sans-serif;
+    color: #867357;
+    font-size: 3.9vw;
+    margin-bottom: 50px;
+}
+
+.google-map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-map {
+    padding-top: 25px;
+    width: 100%; 
+    max-width: 1000px; 
+    height: 500px; 
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .flex-it {
+        flex-direction: column;
+    }
+
+    .contact h3 {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 40px;
+    }
+
+    .google-map {
+        height: 300px;
+    }
+}

@@ -37,7 +37,7 @@
     object-fit: cover;
     max-width: 100%;
     opacity: 0.6;
-    transition: transform 0.4s ease; 
+    transition: transform 0.7s ease; 
 }
 
 .grid-item:hover .about-image {

@@ -3,8 +3,7 @@ import logo from '../../assets/images/logo.jpg';
 
 const Footer = () => {
     return (
-        <footer className="text-light py-4">
-
+        <footer className="text-light pb-2">
             <div className="footer-container">
                 <hr></hr>
                 <div className="row py-5">
@@ -39,7 +38,7 @@ const Footer = () => {
 
 
             <div className="text-center">
-                <p className='fs-5 py-3'>Nabil Shartaj Khan &copy; All Rights Reserved  2024</p>
+                <p className='fs-5 py-3 text-secondary'>Nabil Shartaj Khan &copy; All Rights Reserved  2024</p>
             </div>
         </footer>
     );

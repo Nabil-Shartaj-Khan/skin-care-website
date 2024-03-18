@@ -8,6 +8,11 @@ import About from './components/About/About'
 import Service from './components/Service/Service'
 import Products from './components/Products/Products'
 import Footer from "./components/Footer/Footer"
+import Before from './components/BeforeAfterGallery/Before'
+import Contact from './components/Contact/Contact'
+import Testimonial from './components/Testimonial/Testimonial'
+import Location from './components/Location/Location'
+
 
 function App() {
 
@@ -20,7 +25,12 @@ function App() {
       <About />
       <Service />
       <Products />
+      <Before />
+      <Testimonial />
+      <Contact />
+      <Location />
       <Footer />
+
 
     </>
   )
