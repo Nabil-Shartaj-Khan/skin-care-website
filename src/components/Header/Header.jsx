@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Header.css';
 import search from '../../assets/images/search.png';
 import profile from '../../assets/images/profile.png';
@@ -15,7 +16,9 @@ const Header = () => {
                     </div>
                     <div className='text-div'><img src={logo} alt="Logo" className="logo" /></div>
                     <div className='icon-container'>
-                        <span onClick={() => { alert("This is the profile") }}><img src={profile} alt="Profile" /></span>
+                        <Link to="/login">
+                            <img src={profile} alt="Profile" />
+                        </Link>
                         <span onClick={() => { alert("This is the Cart") }}><img src={cart} alt="Cart" /></span>
                     </div>
                 </div>
@@ -37,11 +40,11 @@ const Header = () => {
                     >
                         <ul className="navbar-nav d-flex flex-col ml-auto">
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="nav-link active text-white"
                                     aria-current="page"
-                                    href="#"
-                                >Home</a>
+                                    to='/'
+                                >Home</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link text-white" href="#SkinPackages">Skin Packages</a>
