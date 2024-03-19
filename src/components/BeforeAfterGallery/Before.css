@@ -56,11 +56,13 @@
     
 }
 
+.slick-prev:before{
+  display: inline;
+}
 .slick-prev:before,
 .slick-next:before {
     color: #8eaf33;
-    font-size: 30px;
-
+    font-size: 40px;
 }
 
 .slick-prev:hover:before,

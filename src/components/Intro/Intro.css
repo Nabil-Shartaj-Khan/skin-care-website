@@ -58,5 +58,6 @@
 }
 
 .book-button:hover {
-  background-color: #c5ac9e;
+  background-color: inherit;
+  color: white;
 }

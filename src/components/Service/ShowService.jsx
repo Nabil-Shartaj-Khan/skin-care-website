@@ -32,7 +32,7 @@ const ShowService = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, // Display three images side by side
+        slidesToShow: 3,
         slidesToScroll: 1
     };
 
@@ -53,12 +53,12 @@ const ShowService = () => {
             <div className='service-showcasing'>
                 <Slider {...settings}>
                     {services.map((service, index) => (
-                        <div key={index} className="card" style={{ width: "18rem" }}>
-                            <img className="card-img-top" src={service.image} alt="Service Image" />
-                            <div className="card-body">
-                                <h5 className="card-title">{service.name}</h5>
-                                <p className="card-text">{service.description}</p>
-                                <p className="card-text">Price: {service.price}</p>
+                        <div key={index} className="new-card " style={{ width: "18rem" }}>
+                            <img className="new-card-img-top" src={service.image} alt="Service Image" />
+                            <div className="new-card-body">
+                                <h5 className="new-card-title">{service.name}</h5>
+                                <p className="new-card-para">{service.description}</p>
+                                <p className="new-card-too">Price: {service.price}</p>
 
                             </div>
                         </div>
