@@ -72,3 +72,20 @@ button[type="submit"]:hover {
 .login-form .link-to a:hover {
     text-decoration: underline; 
 }
+
+
+.registration-success{
+    font-family: "Lato",sans-serif;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: green;
+}
+
+.error-message{
+    color: red;
+    font-family: "Lato",sans-serif;
+    padding-top: 15px;
+    text-align: center;
+}

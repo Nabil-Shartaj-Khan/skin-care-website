@@ -94,3 +94,9 @@ button[type="submit"]:hover {
 .link-to a:hover {
     text-decoration: underline;
 }
+
+.error{
+    color: red;
+    font-family: "Lato",sans-serif;
+    padding-top: 15px;
+}

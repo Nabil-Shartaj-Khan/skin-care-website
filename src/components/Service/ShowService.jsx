@@ -24,10 +24,10 @@ const ShowService = () => {
             price: "$30",
             image: skin
         },
-        // Add more services as needed
+
     ];
 
-    // Settings for React Slick Carousel
+
     const settings = {
         dots: true,
         infinite: true,
@@ -53,8 +53,8 @@ const ShowService = () => {
             <div className='service-showcasing'>
                 <Slider {...settings}>
                     {services.map((service, index) => (
-                        <div key={index} className="new-card " style={{ width: "18rem" }}>
-                            <img className="new-card-img-top" src={service.image} alt="Service Image" />
+                        <div key={index} className="new-card" style={{ width: "18rem" }}>
+                            <img className="new-card-img-top " src={service.image} alt="Service Image" />
                             <div className="new-card-body">
                                 <h5 className="new-card-title">{service.name}</h5>
                                 <p className="new-card-para">{service.description}</p>

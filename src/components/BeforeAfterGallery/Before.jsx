@@ -12,7 +12,6 @@ const Before = () => {
         { id: 1, type: "video", url: dead },
         { id: 2, type: "image", url: lip },
         { id: 3, type: "video", url: laser },
-
     ];
 
     const settings = {
@@ -32,7 +31,7 @@ const Before = () => {
                     {content.map(item => (
                         <div key={item.id} >
                             {item.type === "video" ? (
-                                <video id={`video-${item.id}`} className="specific-video" controls muted >
+                                <video id={`video-${item.id}`} className="specific-video" autoPlay muted loop>
                                     <source src={item.url} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>

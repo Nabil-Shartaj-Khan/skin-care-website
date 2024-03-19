@@ -3,7 +3,12 @@ import pro1 from "../../assets/images/pro1.jpg";
 import pro2 from "../../assets/images/pro2.jpg";
 import pro3 from "../../assets/images/pro3.jpg";
 
+import { Link } from 'react-router-dom';
+
+import { useState, useRef } from 'react';
+
 const Products = () => {
+
     const products = [
         { id: 1, title: 'Product 1', description: 'Description 1', image: pro1 },
         { id: 2, title: 'Product 2', description: 'Description 2', image: pro2 },
@@ -27,10 +32,13 @@ const Products = () => {
                                     <a href="#" className="btn btn-success text-center py-2 px-3 my-2">Add to Cart</a>
                                 </div>
                             </div>
+
                         </div>
                     ))}
                 </div>
+
             </div>
+            <Link to={"/products"} className='book-button text-center'>Show more</Link>
         </div>
     );
 }

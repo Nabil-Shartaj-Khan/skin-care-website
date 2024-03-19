@@ -20,7 +20,7 @@ const Service = () => {
 
     return (
         <div className='all-grid'>
-            <h1 className='grid-header'>Grooming Gauntlet :<span className='grid-span'> Explore Our Offerings! </span></h1>
+            <h1 className='grid-header'>Explore Our Offerings! </h1>
             <div className="grid-container">
                 {services.map((service, index) => (
                     <Link to={'/show_service'} key={index} className="grid-item">

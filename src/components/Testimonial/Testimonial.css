@@ -1,7 +1,7 @@
 /* Testimonial.css */
 .testimonial-holder{
     
-    background-color: #e0dac9;
+    background-color: #e9e3d0;
 }
 
 
@@ -12,6 +12,14 @@
     background-size: cover;
     background-position: center;
 }
+
+
+
+.testimonial-container .slick-prev {
+    left: -47px; 
+
+  }
+
 
 .test-title {
     padding-top: 40px;
@@ -26,7 +34,10 @@
     padding: 30px;
     background-color: #e6e5e0;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 150px;
+    width: 1900px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .test-span {
@@ -45,7 +56,7 @@
 
 .testimonial-card p {
     font-family: "Lato",sans-serif;
-    font-size: 17px;
+    font-size: 22px;
 }
 
 .testimonial-card hr {

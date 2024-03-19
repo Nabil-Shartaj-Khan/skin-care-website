@@ -1,14 +1,12 @@
 /* ShowService.css */
 
-
-
 .service-header {
   position: relative;
 }
 
 .on-service-image {
   position: relative;
-  height: 230px;
+  height: 300px;
 }
 
 .on-service-image img {
@@ -35,6 +33,10 @@
   font-size: 5vw;
   color: rgb(196, 175, 152);
 }
+.service-about {
+  padding-top: 30px;
+}
+
 
 .service-about h3 {
   font-family: "Merriweather",sans-serif;
@@ -68,11 +70,14 @@
   border: 2px solid #a79797; 
   border-radius: 30px;
   overflow: hidden;
-  transition: transform 0.3s ease; 
-  
+  transition: transform 0.3s ease;  
 }
 
 
+.new-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease; 
+}
 
 .new-card-img-top {
   width: 100%;

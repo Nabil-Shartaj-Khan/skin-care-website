@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import './Header.css';
 import search from '../../assets/images/search.png';
 import profile from '../../assets/images/profile.png';
@@ -7,6 +7,17 @@ import cart from '../../assets/images/cart.png';
 import logo from '../../assets/images/logo.jpg';
 
 const Header = () => {
+    const [username, setUsername] = useState('');
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            setUsername(storedUsername);
+
+        }
+    }, []);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className='d-flex flex-column'>
@@ -16,13 +27,14 @@ const Header = () => {
                     </div>
                     <div className='text-div'><img src={logo} alt="Logo" className="logo" /></div>
                     <div className='icon-container'>
-
-                        <Link to="/login">
+                        <Link to={username ? "/profile" : "/login"}>
                             <img src={profile} alt="Profile" />
-
                         </Link>
-
-                        <span onClick={() => { alert("This is the Cart") }}><img src={cart} alt="Cart" /></span>
+                        <Link to="/cart">
+                            <span>
+                                <img src={cart} alt="Cart" />
+                            </span>
+                        </Link>
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -94,7 +106,6 @@ const Header = () => {
                                 <ul className="dropdown-menu" aria-labelledby="LaserHairRemovalDropdown">
                                     <li><a className="dropdown-item" href="#">Option A</a></li>
                                     <li><a className="dropdown-item" href="#">Option B</a></li>
-
                                 </ul>
                             </li>
                             <li className="nav-item">

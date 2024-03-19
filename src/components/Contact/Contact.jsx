@@ -1,7 +1,13 @@
-// Contact.js
+import { useNavigate } from 'react-router-dom';
 import "./Contact.css";
 
 const Contact = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/appointment");
+    };
+
     return (
         <div className="contact-main">
             <div className="contact-container">
@@ -9,7 +15,7 @@ const Contact = () => {
                 <div className="overlay">
                     <h1>Radiant Skin Awaits at Our Clinic</h1>
                     <p>Book your appointment now!</p>
-                    <button className="book-button">Book an Appointment</button>
+                    <button className="book-button" onClick={handleClick}>Book an Appointment</button>
                 </div>
             </div>
         </div>
