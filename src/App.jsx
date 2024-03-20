@@ -21,7 +21,7 @@ import ShowService from "./components/Service/ShowService";
 
 import Profile from "./components/UserAction/Profile/Profile";
 import Appointment from "./components/Appoinment/Appointment";
-import Sellweek from "./components/SellWeek/Sellweek";
+
 
 
 
@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element={<>
           <Intro />
           <About />
-          <Sellweek />
+
           <Service />
           <Before />
           <Testimonial />
@@ -43,8 +43,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/show_service/:service_id" element={<ShowService />} />
-
-
         <Route path="/profile" element={<Profile />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="*" element={<NotFound />} />

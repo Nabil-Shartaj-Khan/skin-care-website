@@ -8,9 +8,9 @@ import "./About.css"
 
 const About = () => {
     const slides = [
-        { image: imageOne, caption: "Impeccable Services", text: "Top-notch beauty services tailored to your needs. From hair styling to skincare treatments, we offer it all." },
-        { image: imageTwo, caption: "Laser Brilliance", text: "Illuminate Your Beauty with Precision" },
-        { image: imageThree, caption: "Acne treatment", text: "Conquer Acne with Our Expert Treatment." },
+        { image: imageOne, caption: "Acne Treatment", firstText: "Experience the Confidence of Clear Skin with Our Acne Treatments.", secondText: "" },
+        { image: imageTwo, caption: "Treatment of the Month", firstText: "Buy 2 sessions of Full body laser hair removal", secondText: "and receive two sessions free!" },
+        { image: imageThree, caption: "Treatment of the Month", firstText: "Get Micro Dermabrasion for only 65$", secondText: "and receive free LED light therapy." },
     ];
 
     return (
@@ -26,7 +26,7 @@ const About = () => {
                     showThumbs={false}
                     showStatus={false}
                     stopOnHover={false}
-                    interval={3000}
+                    interval={4000}
                     transitionTime={1000}
                     showIndicators={false}
                     showArrows={false}
@@ -36,7 +36,8 @@ const About = () => {
                             <img src={slide.image} alt={`Slide ${index + 1}`} />
                             <div className="carousel-text">
                                 <span>{slide.caption}</span>
-                                <p className="description">{slide.text}</p>
+                                <p className="carousel-service-description">{slide.firstText}</p>
+                                <p className="carousel-second-description">{slide.secondText}</p>
                             </div>
                         </div>
                     ))}
