@@ -2,14 +2,14 @@
     margin-left: 20vw;
     color: white;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: flex-start;
     max-width: 60%;
 }
 
 .contact-info,
 .business-hours {
-    flex: 1; 
+    flex: 1;
 }
 
 .contact-info {
@@ -54,7 +54,7 @@
 
 .business-hours-wrapper > div {
     margin-top: 5px;
-    text-align: left; 
+    text-align: left;
 }
 
 .contact h3 {
@@ -78,19 +78,17 @@
     max-width: 1000px;
     height: 500px;
     margin-bottom: 48px;
-
 }
 
 @media screen and (max-width: 576px) {
-
     body {
         overflow-x: hidden;
     }
-    
+
     .location-container {
         margin-left: 5vw;
         max-width: 90%;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .contact h3 {
@@ -105,9 +103,10 @@
     }
 
     .google-map {
-        max-width: 100%;
-        padding-right: 500px;
+        width: 100%;
+        max-width: none;
     }
+
     .google-map-container {
         padding-bottom: 20px;
         margin-bottom: 200px;
