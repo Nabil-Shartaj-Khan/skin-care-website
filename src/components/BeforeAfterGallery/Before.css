@@ -53,8 +53,12 @@
   .before-carousel-container h4 {
       font-size: 3vw;
   }
-}
 
+  .slick-prev,
+  .slick-next {
+      display: none;
+  }
+}
 
 .slick-prev:before,
 .slick-next:before {
