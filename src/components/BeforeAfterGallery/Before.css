@@ -41,6 +41,20 @@
   height: 700px;
 }
 
+
+.slick-prev:before,
+.slick-next:before {
+    color: #8eaf33;
+    font-size: 30px; 
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #ecb798;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .before-carousel {
       width: 90%;
@@ -64,13 +78,3 @@
 
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: #8eaf33;
-    font-size: 10px; 
-}
-
-.slick-prev:hover:before,
-.slick-next:hover:before {
-    color: #ecb798;
-}
