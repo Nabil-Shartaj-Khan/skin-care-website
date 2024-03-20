@@ -28,13 +28,13 @@ const Location = () => {
                 <div className="business-hours">
                     <span>Business Hours:</span>
                     <div className="business-hours-wrapper">
-                        <div className='fs-5'><b className='pe-1'>Friday : </b> 9:30 AM – 6:30PM</div>
-                        <div className='fs-5'><b className='pe-1'>Saturday : </b> 9:30 AM – 5:00PM</div>
-                        <div className='fs-5'><b className='pe-1'>Sunday :</b> 9:30 AM – 4:00PM</div>
-                        <div className='fs-5'><b className='pe-1'>Monday :</b> 9:30 AM – 6:00PM</div>
-                        <div className='fs-5'><b className='pe-1'>Tuesday :</b> 9:30 AM – 6:00PM</div>
-                        <div className='fs-5'><b className='pe-1'>Wednesday :</b> 9:30 AM – 6:00PM</div>
-                        <div className='fs-5'><b className='pe-1'>Thursday :</b> 9:30 AM – 8:00PM</div>
+                        <div className="fs-5"><b>Friday:</b> 06:00 AM - 09:00 PM</div>
+                        <div className="fs-5"><b>Saturday:</b> 06:00 AM - 09:00 PM</div>
+                        <div className="fs-5"><b>Sunday:</b> 09:30 AM - 04:00 PM</div>
+                        <div className="fs-5"><b>Monday:</b> 09:30 AM - 06:00 PM</div>
+                        <div className="fs-5"><b>Tuesday:</b> 09:30 AM - 06:00 PM</div>
+                        <div className="fs-5"><b>Wednesday:</b> 09:30 AM - 06:00 PM</div>
+                        <div className="fs-5"><b>Thursday:</b> 09:30 AM - 08:00 PM</div>
                     </div>
                 </div>
             </div>

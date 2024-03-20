@@ -4,12 +4,11 @@
     display: flex;
     justify-content: space-around;
     max-width: 60%;
-    
 }
 
 .flex-it {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -28,10 +27,10 @@
     display: flex;
     flex-direction: column;
 }
-.contact-details span {
 
+.contact-details span {
     font-size: 20px;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contact-details div {
@@ -59,10 +58,11 @@
 .business-hours-wrapper > div {
     margin-top: 5px;
 }
-.contact h3{
+
+.contact h3 {
     padding-top: 80px;
     padding-left: 80px;
-    font-family: 'great vibes',sans-serif;
+    font-family: 'great vibes', sans-serif;
     color: #bd8b3b;
     font-size: 3.9vw;
     margin-bottom: 50px;
@@ -72,22 +72,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%; 
-    overflow-x: hidden; 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .google-map {
     padding-top: 25px;
     width: 100%;
-    max-width: 1000px; 
+    max-width: 1000px;
     height: 500px;
     margin-bottom: 48px;
 }
 
 @media screen and (max-width: 576px) {
     body {
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
+
     .location-container {
         margin-left: 5vw;
         max-width: 100%;
@@ -99,11 +100,37 @@
         font-size: 40px;
     }
 
+    .business-hours {
+        margin-top: 10px;
+    }
+
+    .business-hours span {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .business-hours-wrapper {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 0;
+    }
+
+    .business-hours-wrapper > div {
+        margin-top: 10px;
+        font-size: 16px; 
+    }
+
+    .business-hours-wrapper span {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
     .google-map {
         height: 300px;
     }
+
     .google-map-container {
         padding-bottom: 40px;
-        margin-bottom: 200px; 
+        margin-bottom: 200px;
     }
 }
