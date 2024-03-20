@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Slider from 'react-slick';
-import './ShowService.css'; // Import your CSS file here
-import axios from 'axios'; // Import Axios
+import './ShowService.css';
+import axios from 'axios';
 import skinImage from "../../assets/images/skin.jpeg";
 import lightImage from "../../assets/images/light.jpeg";
 import womanImage from "../../assets/images/woman.jpg";
@@ -50,20 +50,35 @@ const ShowService = () => {
     }, [service_id, service, subcategories, loading, error]);
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
-
-    // Sample data for images
-    const images = {
-        skin: skinImage,
-        light: lightImage,
-        woman: womanImage
-    };
-    const slideWidth = `${100 / settings.slidesToShow}%`;
 
     return (
         <div className='main-service'>
@@ -80,10 +95,8 @@ const ShowService = () => {
 
             <div className='service-showcasing'>
                 <Slider {...settings}>
-
                     {subcategories.map((subcategory, index) => (
-                        <div key={index} className="new-card" style={{ width: slideWidth }}>
-
+                        <div key={index} className="new-card">
                             <div className="new-card-body">
                                 <h5 className="new-card-title">{subcategory.subcategory_name}</h5>
                                 <img src={skinImage} alt={subcategory.subcategory_name} className="new-card-img-top" />

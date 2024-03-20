@@ -19,6 +19,8 @@ footer {
 
 .footer-container img {
     transition: transform 0.3s ease;
+    height: 100px;
+    width: 100px;
 }
 
 .footer-container img:hover {

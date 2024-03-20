@@ -33,21 +33,18 @@
   font-size: 5vw;
   color: #d39f4a;
 }
+
 .service-about {
   padding-top: 30px;
 }
 
-
-
-
 .service-showcasing {
-  margin:  0px 60px; 
-  padding: 40px 120px;
-  padding-bottom: 120px;
+  margin: 0 30px;
+  padding: 20px 0; 
 }
 
-.about-service p{
-  padding: 3vw 3vw 3vw 3vw;
+.about-service p {
+  padding: 3vw;
   font-family: "Lato",sans-serif;
   font-size: 28px;
   line-height: 32px;
@@ -65,11 +62,9 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   min-height: 730px;
-  display: flex; 
-  flex-direction: column; 
   background-color: rgb(190, 190, 197);
+  margin-bottom: 100px;
 }
-
 
 .new-card:hover {
   transform: translateY(-10px);
@@ -80,31 +75,31 @@
   width: 100%;
   height: auto;
   opacity: 0.6;
-
 }
 
 .new-card-body {
-  padding: 70px;
+  padding: 20px;
   text-align: center;
-  flex: 1; 
 }
 
 .new-card-title {
-  font-size: 2.3vw;
+  padding-top: 20px;
+  font-size: 45px;
   color: #bd8732;
   margin-bottom: 13px;
   font-family: "great vibes",sans-serif;
 }
 
 .new-card-para {
-  padding-top: 20px;
-  font-size:1.3rem;
+  padding-top: 10px;
+  font-size: 18px;
   font-family: "Lato",sans-serif;
   color: #666;
   margin-bottom: 15px;
 }
+
 .new-card-too {
-  font-size:1.2rem;
+  font-size: 16px;
   font-family: "Lato",sans-serif;
   color: #677c5a;
   font-weight: bold;
