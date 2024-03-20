@@ -1,9 +1,8 @@
-.all-grid{
-    background-color:  #beb9b2;
+.all-grid {
+    background-color: #beb9b2;
 }
 
 .grid-header {
-
     font-family: "great vibes", sans-serif;
     color: #c08b36;
     font-size: 4vw;
@@ -19,7 +18,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
 }
 
 .grid-item {
@@ -32,16 +30,16 @@
 
 .about-image {
     width: 100%;
-    height: auto; 
-    max-height: 360px; 
+    height: auto;
+    max-height: 360px;
     object-fit: cover;
     max-width: 100%;
     opacity: 0.6;
-    transition: transform 0.7s ease; 
+    transition: transform 0.7s ease;
 }
 
 .grid-item:hover .about-image {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .grid-overlay {
@@ -55,7 +53,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.637); 
+    background-color: rgba(0, 0, 0, 0.637);
     color: white;
     text-align: center;
     opacity: 0;
@@ -63,16 +61,17 @@
 }
 
 .grid-overlay h2 {
-    font-size: 2vw; 
-    font-family: "Merriweather",sans-serif;
-    margin-bottom: 10px; 
-    color: #F2E1CB; ;
+    font-size: 2vw;
+    font-family: "Merriweather", sans-serif;
+    margin-bottom: 10px;
+    color: #f2e1cb;
 }
+
 .grid-overlay p {
-    font-size: 1.2vw; 
-    font-family: "Merriweather",sans-serif;
-    margin-bottom: 10px; 
-    color: #AAAAA9;
+    font-size: 1.2vw;
+    font-family: "Merriweather", sans-serif;
+    margin-bottom: 10px;
+    color: #aaaaa9;
 }
 
 .grid-item:hover .grid-overlay {
@@ -85,16 +84,15 @@
 
 .initial-text {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     transition: opacity 0.2s ease;
     z-index: 1;
     color: rgb(63, 53, 53);
     font-weight: bold;
     font-size: 2vw;
-    font-family: "Merriweather",sans-serif;
-    
+    font-family: "Merriweather", sans-serif;
     opacity: 1;
 }
 
@@ -102,10 +100,42 @@
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid-header {
+        font-size: 6vw;
+    }
+
+    .grid-overlay h2 {
+        font-size: 4vw;
+    }
+
+    .grid-overlay p {
+        font-size: 2vw;
+    }
+
+    .initial-text {
+        font-size: 4vw;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-header {
+        font-size: 8vw;
+    }
+
+    .grid-overlay h2 {
+        font-size: 6vw;
+    }
+
+    .grid-overlay p {
+        font-size: 3vw;
+    }
+
+    .initial-text {
+        font-size: 6vw;
     }
 }
