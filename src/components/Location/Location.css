@@ -104,7 +104,9 @@
 
     .google-map {
         width: 100%; 
-        margin: 0 auto; 
+        max-width: none; 
+        height: 300px; 
+        margin-bottom: 20px; 
     }
 
     .google-map-container {
