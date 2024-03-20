@@ -58,7 +58,7 @@
 }
 
 .contact h3 {
-    padding-top: 80px;
+    padding-top: 40px; 
     padding-left: 80px;
     font-family: 'great vibes', sans-serif;
     color: #bd8b3b;
@@ -85,17 +85,19 @@
         overflow-x: hidden;
     }
 
+    .contact h3 {
+        padding-top: 20px; 
+        padding-left: 20px;
+        font-size: 45px;
+    }
+
     .location-container {
         margin-left: 5vw;
+        margin-top: 0; 
         max-width: 90%;
         flex-direction: column;
     }
 
-    .contact h3 {
-        padding-top: 20px;
-        padding-left: 20px;
-        font-size: 40px;
-    }
 
     .business-hours {
         width: 100%;
