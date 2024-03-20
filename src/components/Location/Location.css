@@ -82,10 +82,10 @@
 }
 
 @media screen and (max-width: 576px) {
+
     body {
         overflow-x: hidden;
     }
-
     .location-container {
         margin-left: 5vw;
         max-width: 90%;
@@ -104,7 +104,7 @@
     }
 
     .google-map {
-        max-width: 60%;
+        max-width: 90%;
     }
     .google-map-container {
         padding-bottom: 20px;
