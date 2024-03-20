@@ -66,9 +66,9 @@ const Profile = () => {
                     <img src={profile} className="profile-picture rounded-circle" alt="Profile" />
                     <div className="profile-card-body">
                         <h5 className="profile-card-title">{userDetails ? userDetails.username : ''}</h5>
-                        <p className="profile-card-text">Email: {userDetails ? userDetails.email : ''}</p>
-                        <p className="profile-card-text">Location: {userDetails ? userDetails.location : ''}</p>
-                        <p className="profile-card-text pb-4">Gender: {userDetails ? userDetails.gender : ''}</p>
+                        <p className="profile-card-text"><b>Email:</b> {userDetails ? userDetails.email : ''}</p>
+                        <p className="profile-card-text"><b>Location:</b> {userDetails ? userDetails.location : ''}</p>
+                        <p className="profile-card-text pb-4"><b>Gender:</b> {userDetails ? userDetails.gender : ''}</p>
 
                         <h6 className="profile-card-title">Booked Appointments:</h6>
                         {bookedAppointments.length > 0 ? (
