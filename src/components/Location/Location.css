@@ -83,10 +83,9 @@
     height: 500px;
     margin-bottom: 48px;
 }
-
 @media screen and (max-width: 576px) {
-    body {
-        overflow-x: hidden; 
+    html, body {
+        overflow: hidden; 
     }
     .location-container {
         margin-left: 5vw;
