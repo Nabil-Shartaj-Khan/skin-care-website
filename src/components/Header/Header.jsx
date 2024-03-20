@@ -29,11 +29,7 @@ const Header = () => {
                     <div className='icon-container'>
                         <Link to={username ? "/profile" : "/login"}>
                             <img src={profile} alt="Profile" />
-                        </Link>
-                        <Link to="/cart">
-                            <span>
-                                <img src={cart} alt="Cart" />
-                            </span>
+                            <span className='fs-5 about-image'>{username ? username : "Login/Register"}</span>
                         </Link>
                     </div>
                 </div>

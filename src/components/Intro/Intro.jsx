@@ -10,7 +10,7 @@ const Intro = () => {
     };
 
     return (
-        <div className="intro">
+        <div className="intro" id="intro">
             <video className="background-video" loop autoPlay muted>
                 <source src={video} type="video/mp4" />
             </video>

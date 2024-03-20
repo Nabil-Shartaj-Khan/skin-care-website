@@ -45,9 +45,9 @@
 
 .navbar-nav .nav-link {
   color: #464545 !important;
-  font-weight: bold;
+  font-weight:600;
   font-size: 19px;
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-right: 40px;
   padding-top: 15px;
   padding-bottom: 22px;

@@ -7,7 +7,7 @@ import Header from './components/Header/Header'
 import Intro from './components/Intro/Intro'
 import About from './components/About/About'
 import Service from './components/Service/Service'
-import Products from './components/Products/Products'
+
 import Footer from "./components/Footer/Footer"
 import Before from './components/BeforeAfterGallery/Before'
 import Contact from './components/Contact/Contact'
@@ -17,8 +17,8 @@ import Login from "./components/UserAction/Login/Login";
 import NotFound from "./NotFound";
 import Register from "./components/UserAction/Register/Register";
 import ShowService from "./components/Service/ShowService";
-import Cart from "./components/Header/Cart/Cart";
-import AllProducts from "./components/Products/AllProducts";
+
+
 import Profile from "./components/UserAction/Profile/Profile";
 import Appointment from "./components/Appoinment/Appointment";
 
@@ -33,7 +33,6 @@ function App() {
           <Intro />
           <About />
           <Service />
-          <Products />
           <Before />
           <Testimonial />
           <Contact />
@@ -41,9 +40,9 @@ function App() {
         </>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/show_service" element={<ShowService />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/products" element={<AllProducts />} />
+        <Route path="/show_service/:service_id" element={<ShowService />} />
+
+
         <Route path="/profile" element={<Profile />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="*" element={<NotFound />} />

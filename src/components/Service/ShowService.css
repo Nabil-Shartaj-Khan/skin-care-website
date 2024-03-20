@@ -53,12 +53,11 @@
 }
 
 .about-service p{
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding: 3vw 3vw 3vw 3vw;
   font-family: "Lato",sans-serif;
-  font-size: 21px;
+  font-size: 28px;
   line-height: 32px;
-  color: #396141;
+  color: #444444;
   margin-bottom: 4vw;
 }
 
@@ -70,7 +69,11 @@
   border: 2px solid #a79797; 
   border-radius: 30px;
   overflow: hidden;
-  transition: transform 0.3s ease;  
+  transition: transform 0.3s ease;
+  min-height: 730px;
+  display: flex; 
+  flex-direction: column; 
+  background-color: rgb(216, 228, 236);
 }
 
 
@@ -87,20 +90,21 @@
 }
 
 .new-card-body {
-  padding: 50px;
+  padding: 70px;
   text-align: center;
-  background-color:#f5eae4;;
+  flex: 1; 
 }
 
 .new-card-title {
-  font-size: 2.5vw;
+  font-size: 2.3vw;
   color: #696161;
   margin-bottom: 13px;
   font-family: "great vibes",sans-serif;
 }
 
 .new-card-para {
-  font-size:1.4rem;
+  padding-top: 20px;
+  font-size:1.3rem;
   font-family: "Lato",sans-serif;
   color: #666;
   margin-bottom: 15px;

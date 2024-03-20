@@ -39,13 +39,17 @@ const Appointment = () => {
         }
     };
 
+
+    const navigateProfile = () => {
+        navigate("/profile");
+    };
     return (
         username ? (
             bookingSuccess ? (
                 <div className='big-container'>
                     <h1 className='hello-header'>Thank you for booking!</h1>
                     <p className='text-center new-para-book'>Please check your profile for further details.</p>
-                    <button className='center-button'>Profile details</button>
+                    <button className='center-button' onClick={navigateProfile}>Profile details</button>
                 </div>
             ) : (
                 <div className='big-container'>

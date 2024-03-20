@@ -118,6 +118,84 @@ app.post("/api/appointments", (req, res) => {
   });
 });
 
+// Fetch service details
+app.get("/api/services/:service_id", (req, res) => {
+  const service_id = req.params.service_id;
+
+  // Query the database to fetch service details based on the service_id
+  const sql = "SELECT * FROM services WHERE service_id = ?";
+  db.query(sql, [service_id], (err, result) => {
+    if (err) {
+      console.error("Error fetching service details:", err);
+      return res
+        .status(500)
+        .json({ message: "Failed to fetch service details" });
+    }
+
+    if (result.length === 0) {
+      return res.status(404).json({ message: "Service not found" });
+    }
+
+    const service = result[0];
+    res.status(200).json(service);
+  });
+});
+
+// Fetch subcategories
+app.get("/api/subcategories/:service_id", (req, res) => {
+  const service_id = req.params.service_id;
+
+  const sql = "SELECT * FROM subcategories WHERE service_id = ?";
+  db.query(sql, [service_id], (err, result) => {
+    if (err) {
+      console.error("Error fetching subcategories:", err);
+      return res.status(500).json({ message: "Failed to fetch subcategories" });
+    }
+
+    if (result.length === 0) {
+      return res.status(404).json({ message: "Subcategories not found" });
+    }
+
+    res.status(200).json(result);
+  });
+});
+
+// Fetch user details
+app.get("/api/user/details/:userId", (req, res) => {
+  const userId = req.params.userId;
+
+  const sql =
+    "SELECT username, email, location, gender FROM users WHERE user_id = ?";
+  db.query(sql, [userId], (err, result) => {
+    if (err) {
+      console.error("Error fetching user details:", err);
+      return res.status(500).json({ message: "Failed to fetch user details" });
+    }
+
+    if (result.length === 0) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    const userDetails = result[0];
+    res.status(200).json(userDetails);
+  });
+});
+
+// Fetch appointments for a user
+app.get("/api/appointments/:userId", (req, res) => {
+  const userId = req.params.userId;
+
+  const sql = "SELECT * FROM appointments WHERE user_id = ?";
+  db.query(sql, [userId], (err, result) => {
+    if (err) {
+      console.error("Error fetching appointments:", err);
+      return res.status(500).json({ message: "Failed to fetch appointments" });
+    }
+
+    res.status(200).json(result);
+  });
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

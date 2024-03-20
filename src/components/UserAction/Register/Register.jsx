@@ -66,12 +66,20 @@ const Register = () => {
                 gender: ''
             });
 
-
             navigate('/login', { state: { registrationSuccess: true } });
         } catch (error) {
-            console.error('Registration failed:', error);
+            if (error.response && error.response.data && error.response.data.message) {
+                // Backend returned an error message
+                setErrors({ email: error.response.data.message });
+            } else {
+                // Other types of errors
+                console.error('Registration failed:', error);
+            }
         }
     };
+
+
+
 
     return (
         <div className="register-container">

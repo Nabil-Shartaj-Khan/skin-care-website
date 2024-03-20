@@ -34,7 +34,8 @@ const Login = () => {
             console.log('Username:', formData.username);
             console.log('UserID:', response.data.userId);
 
-            navigate('/profile');
+            navigate('/');
+            window.location.reload();
         } catch (error) {
             console.error('Login failed:', error);
             setErrorMessage('Invalid username or password. Please try again.');
