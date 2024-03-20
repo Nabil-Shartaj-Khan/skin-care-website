@@ -1,6 +1,6 @@
 .before-carousel-container {
   margin-top: 4vw;
-  padding: 1.5vw 1vw;
+  padding: 1.5vw;
   background-color: #ddd9d1;
 }
 
@@ -9,7 +9,7 @@
   color: #c08b36;
   font-size: 4vw;
   text-align: center;
-  padding: 1vw 1vw;
+  padding: 1vw;
 }
 
 .before-carousel-container h4 {
@@ -19,10 +19,15 @@
 }
 
 .before-carousel {
-  width: 80%;
+  padding-top: 100px;
+  width: 90%;
   margin: 20px auto;
   background-color: inherit;
+
+  
 }
+
+
 
 .before-carousel .slick-slide {
   text-align: center;
