@@ -16,8 +16,8 @@ const Intro = () => {
             </video>
             <div className="overlay">
                 <h2>NU Skin Laser & Beauty Clinic</h2>
-                <p>Transforming Beauty, Inside and Out</p>
                 <button className='book-button' onClick={handleClick}>Book an appointment</button>
+                <p>Transforming Beauty, Inside and Out</p>
             </div>
         </div>
     );

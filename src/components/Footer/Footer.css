@@ -1,10 +1,11 @@
+/* Footer.css */
+
 .footer-container {
     padding-left: 8%;
     padding-right: 8%;
     margin-right: auto;
     margin-left: auto;
     color: #726553;
-
 }
 
 footer {
@@ -25,11 +26,21 @@ footer {
 }
 
 .footer-container a {
-   color: #464545 !important;
+    color: #464545 !important;
     font-size: 21px;
     transition: transform 0.4s ease;
 }
 
 .footer-container a:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container.img{
+        display: none;
+    }
+    .footer-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

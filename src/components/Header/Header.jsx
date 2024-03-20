@@ -28,7 +28,7 @@ const Header = () => {
                         <img src={logo} alt="Logo" className="logo" />
                     </div>
                     <div className='icon-container'>
-                        <Link to={username ? "/profile" : "/login"}>
+                        <Link to={username ? "/profile" : "/login"} className="profile-link">
                             <img src={profile} alt="Profile" />
                             {username ? (
                                 <span className='fs-5 about-image'>{username}</span>
