@@ -1,6 +1,6 @@
 .before-carousel-container {
   margin-top: 4vw;
-  padding: 1.5vw;
+  padding: 1.5vw 2vw 3vw ;
   background-color: #ddd9d1;
 }
 
@@ -19,12 +19,11 @@
 }
 
 .before-carousel {
-  padding-top: 100px;
+  padding-top: 50px; 
+  padding-bottom: 10px; 
   width: 90%;
   margin: 20px auto;
   background-color: inherit;
-
-  
 }
 
 

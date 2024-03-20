@@ -23,24 +23,26 @@ const Before = () => {
     };
 
     return (
-        <div className='before-carousel-container'>
-            <h1>Witness the magic of our treatments</h1>
-            <h4>Turning 'Before' into 'After' bliss!"</h4>
-            <div className="before-carousel">
-                <Slider {...settings}>
-                    {content.map(item => (
-                        <div key={item.id} >
-                            {item.type === "video" ? (
-                                <video id={`video-${item.id}`} className="specific-video" autoPlay muted loop>
-                                    <source src={item.url} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            ) : (
-                                <img src={item.url} alt="Before" />
-                            )}
-                        </div>
-                    ))}
-                </Slider>
+        <div className=''>
+            <div className='before-carousel-container'>
+                <h1>Witness the magic of our treatments</h1>
+                <h4>Turning 'Before' into 'After' bliss!"</h4>
+                <div className="before-carousel">
+                    <Slider {...settings}>
+                        {content.map(item => (
+                            <div key={item.id} >
+                                {item.type === "video" ? (
+                                    <video id={`video-${item.id}`} className="specific-video" autoPlay muted loop>
+                                        <source src={item.url} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                ) : (
+                                    <img src={item.url} alt="Before" />
+                                )}
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );
