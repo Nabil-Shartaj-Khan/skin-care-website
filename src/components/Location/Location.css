@@ -103,8 +103,9 @@
     }
 
     .google-map {
-        width: 100%;
-        max-width: none;
+        width: 90%; 
+        max-width: 1000px; 
+        margin: 0 auto; 
     }
 
     .google-map-container {
