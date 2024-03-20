@@ -27,18 +27,13 @@
 
 .before-carousel .slick-slide {
   text-align: center;
-  padding-top: 15px;
 }
 
-.before-carousel img {
-  max-width: 100%;
-  height: 700px;
-  margin: 0 auto;
-}
-
+.before-carousel img,
 .before-carousel video {
   max-width: 100%;
-  height: 700px;
+  height: auto; 
+  margin: 0 auto;
 }
 
 .slick-prev:before,
