@@ -12,8 +12,8 @@ const Service = () => {
     const services = [
         { service_id: 1, image: skin, title: 'Skin treatment', description: 'Glow with Confidence: Discover Your Radiance!' },
         { service_id: 2, image: light, title: 'Skin lighting', description: 'Illuminate Your Beauty: Shine Brighter than Ever Before!' },
-        { service_id: 3, image: woman, title: 'Women section', description: 'Empowering Elegance: Where Beauty Meets Empowerment!' },
-        { service_id: 4, image: man, title: 'Men section', description: 'Refined Masculinity: Unleash Your Inner Gentleman!' },
+        { service_id: 3, image: woman, title: 'Full body laser', description: 'Empowering Elegance: Where Beauty Meets Empowerment!' },
+        { service_id: 4, image: man, title: 'Tattoo removal', description: 'Refined Masculinity: Unleash Your Inner Gentleman!' },
         { service_id: 5, image: womenPkg, title: 'Women packages', description: 'Indulge in Bliss: Tailored Packages for Every Woman!' },
         { service_id: 6, image: men, title: 'Men packages', description: 'Elevate Your Grooming: Exclusive Packages for the Modern Man!' }
     ];

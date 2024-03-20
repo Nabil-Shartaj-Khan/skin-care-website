@@ -6,7 +6,7 @@ import './Location.css';
 const Location = () => {
     return (
         <div className='contact'>
-            <h3>Contact us : Enhance Your Skin's Brilliance!</h3>
+            <h3 className='text-center pb-4'>Contact us </h3>
             <div className="location-container">
                 <div className="contact-info">
                     <img className="icon" src={phoneIcon} alt="phone" />
