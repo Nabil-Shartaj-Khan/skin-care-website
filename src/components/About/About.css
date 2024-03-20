@@ -23,45 +23,69 @@
     color: white;
     border-radius: 5px;
 }
-.carousel-text span{
-    font-family: "great vibes",sans-serif;
+
+.carousel-text span {
+    font-family: "great vibes", sans-serif;
     font-size: 4.4vw;
     color: #d39f4a;
     position: relative;
     bottom: 120px;
 }
 
-
-
-
-.carousel-heading{
+.carousel-heading {
     padding: 3vw 4vw;
 }
 
 .carousel-heading h1 {
-    font-size: 3.4vw; 
-    font-weight: 500;       
+    font-size: 3.4vw;
+    font-weight: 500;
     font-family: "great vibes", sans-serif;
     color: #c08b36;
     padding-bottom: 2vw;
-    
 }
 
 .carousel-heading h4 {
-    font-size: 2.4vw; 
+    font-size: 2.4vw;
     font-family: "Merriweather", sans-serif;
     color: #7c6546;
 }
 
 .carousel-service-description {
     margin-bottom: 5px;
-    font-size: 40px; 
-    line-height: 1.5; 
-    font-family: "Merriweather",sans-serif;
-  }
-  
-  .carousel-second-description {
+    font-size: 3vw;
+    line-height: 1.5;
+    font-family: "Merriweather", sans-serif;
+}
+
+.carousel-second-description {
     font-style: italic;
-    font-size: 30px;
-    font-family: "Merriweather",sans-serif;
-  }
+    font-size: 2vw; 
+    font-family: "Merriweather", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-heading h1 {
+        font-size: 6vw;
+    }
+
+    .carousel-heading h4 {
+        font-size: 4vw;
+    }
+
+    .carousel-text {
+        padding: 2vw;
+    }
+
+    .carousel-text span {
+        font-size: 6vw;
+        bottom: 60px;
+    }
+
+    .carousel-service-description {
+        font-size: 6vw;
+    }
+
+    .carousel-second-description {
+        font-size: 4vw;
+    }
+}
