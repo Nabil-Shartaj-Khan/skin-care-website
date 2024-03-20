@@ -6,19 +6,28 @@
 
 
 .testimonial-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 4vw 2vw;   
-    background-size: cover;
-    background-position: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 4vw 2vw;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Add this line */
 }
 
 
 
-.testimonial-container .slick-prev {
-    left: -47px; 
 
-  }
+.testimonial-container .slick-prev {
+  left: -40px; 
+}
+
+.testimonial-container .slick-next {
+  right: 5px; 
+}
+.testimonial-container .slick-prev
+.testimonial-container .slick-next :hover {
+  color: gold; 
+}
 
 
 .test-title {
