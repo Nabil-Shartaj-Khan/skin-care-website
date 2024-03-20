@@ -105,7 +105,8 @@
     }
 
     .google-map {
-        max-width: 50%;
+        max-width: 100%;
+        padding-right: 500px;
     }
     .google-map-container {
         padding-bottom: 20px;
