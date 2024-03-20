@@ -9,7 +9,7 @@ import "./About.css"
 const About = () => {
     const slides = [
         { image: imageOne, caption: "Acne Treatment", firstText: "Experience the Confidence of Clear Skin with Our Acne Treatments.", secondText: "" },
-        { image: imageTwo, caption: "Treatment of the Month", firstText: "Buy 2 sessions of Full body laser hair removal", secondText: "and receive two sessions free!" },
+        { image: imageTwo, caption: "Treatment of the Month", firstText: "Buy 2 sessions of Full body ", secondText: " laser hair removal and receive two sessions free!" },
         { image: imageThree, caption: "Treatment of the Month", firstText: "Get Micro Dermabrasion for only 65$", secondText: "and receive free LED light therapy." },
     ];
 
