@@ -14,14 +14,14 @@ const Location = () => {
                         <img className="icon" src={phoneIcon} alt="phone" />
                         <div className="contact-details">
                             <div><span style={{ color: "#867357" }}>Phone:</span></div>
-                            <div><span style={{ color: "#396141" }} >+61298293232</span></div>
+                            <div><span style={{ color: "#8a601c" }} >+61298293232</span></div>
                         </div>
                     </div>
                     <div className="contact-info">
                         <img className="icon" src={addressIcon} alt="address" />
                         <div className="contact-details">
                             <div><span style={{ color: "#867357" }}>Address:</span></div>
-                            <div><span style={{ color: "#396141" }}>Shop AG09, 52 Sergeant St, Edmondson Park NSW 2174, Australia</span></div>
+                            <div><span style={{ color: "#8a601c" }}>Shop AG09, 52 Sergeant St, Edmondson Park NSW 2174, Australia</span></div>
                         </div>
                     </div>
                 </div>

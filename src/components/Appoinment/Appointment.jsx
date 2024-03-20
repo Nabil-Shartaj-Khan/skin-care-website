@@ -100,8 +100,8 @@ const Appointment = () => {
                 </div>
             )
         ) : (
-            <div className="cart-container">
-                <h1 className="cart-text">Your journey begins here!</h1>
+            <div className="appointment-container">
+                <h1 className="appointment-text">Your journey begins here!</h1>
 
                 <Link to={"/login"} className='book-button'>Login/Register</Link>
 

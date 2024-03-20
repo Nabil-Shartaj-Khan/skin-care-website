@@ -117,3 +117,9 @@
     text-decoration: none;
   }
   
+
+  .appointment-container{
+    font-family: "Merriweather",sans-serif;
+    color: #504a4a;
+    height: 500px;
+  }

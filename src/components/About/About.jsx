@@ -9,8 +9,8 @@ import "./About.css"
 const About = () => {
     const slides = [
         { image: imageOne, caption: "Impeccable Services", text: "Top-notch beauty services tailored to your needs. From hair styling to skincare treatments, we offer it all." },
-        { image: imageTwo, caption: "Tranquil Ambiance", text: "Relax in a serene environment designed to rejuvenate your spirit." },
-        { image: imageThree, caption: "Unmatched Quality", text: "Experience exceptional quality in every service we provide." },
+        { image: imageTwo, caption: "Laser Brilliance", text: "Illuminate Your Beauty with Precision" },
+        { image: imageThree, caption: "Acne treatment", text: "Conquer Acne with Our Expert Treatment." },
     ];
 
     return (

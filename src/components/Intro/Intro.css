@@ -32,16 +32,16 @@
 }
 
 .overlay h2 {
-  margin-top: 14vw;
-  font-size: 5vw;
+  margin-top: 2vw; 
+  font-size: 6.5vw;
   margin-bottom: 20px;
   font-family: "allura", sans-serif;
-  color: #F2E1CB;
+  color: #d39f4a;
 }
 
 .overlay p {
-  font-size: 1.5vw;
-  color: #AAAAA9;
+  font-size: 2.3vw;
+  color: #F2E1CB;
   font-family: "Merriweather", sans-serif;
 }
 
