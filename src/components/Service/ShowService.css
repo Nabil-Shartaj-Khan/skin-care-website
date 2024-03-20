@@ -31,20 +31,14 @@
   box-sizing: border-box;
   font-family: "great vibes",sans-serif;
   font-size: 5vw;
-  color: rgb(196, 175, 152);
+  color: #d39f4a;
 }
 .service-about {
   padding-top: 30px;
 }
 
 
-.service-about h3 {
-  font-family: "Merriweather",sans-serif;
-  font-size: 3.3vw;
-  text-align: center;
-  padding: 40px 40px;
-  color: #696054;
-}
+
 
 .service-showcasing {
   margin:  0px 60px; 
@@ -66,14 +60,14 @@
 }
 
 .new-card {
-  border: 2px solid #a79797; 
+  border: 2px solid #979682; 
   border-radius: 30px;
   overflow: hidden;
   transition: transform 0.3s ease;
   min-height: 730px;
   display: flex; 
   flex-direction: column; 
-  background-color: rgb(216, 228, 236);
+  background-color: rgb(190, 190, 197);
 }
 
 
@@ -97,7 +91,7 @@
 
 .new-card-title {
   font-size: 2.3vw;
-  color: #696161;
+  color: #bd8732;
   margin-bottom: 13px;
   font-family: "great vibes",sans-serif;
 }

@@ -1,28 +1,45 @@
 .sellweek-container {
-    text-align: center;
-  }
-  
-  .header {
-    margin-bottom: 20px;
-  }
-  
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 3vw;
+  color: #c08b36;
+  font-family: "Merriweather", sans-serif;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.image-wrapper img {
+  width: 50%;
+  max-width: 350px;
+  margin: 0 20px;
+}
+
+@media (min-width: 576px) {
   .header h2 {
-    font-size: 3vw;
-    color: #c08b36;
-    font-family: "Merriweather",sans-serif;
-    padding-bottom: 80px;
-    padding-top: 50px;
+      font-size: 24px;
+      padding-bottom: 60px;
+      padding-top: 40px;
   }
-  
-  
+
   .image-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
+      flex-direction: row;
+      align-items: center;
   }
-  
+
   .image-wrapper img {
-    width: 350px; 
-    margin: 0 80px; 
+      width: auto;
+      margin: 0 20px;
   }
-  
+}

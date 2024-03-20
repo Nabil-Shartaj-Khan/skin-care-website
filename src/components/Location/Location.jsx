@@ -27,7 +27,7 @@ const Location = () => {
                 </div>
                 <div className="business-hours">
                     <span>Business Hours:</span>
-                    <div>
+                    <div className="business-hours-wrapper">
                         <div className='fs-5'><b className='pe-1'>Friday : </b> 9:30 AM – 6:30PM</div>
                         <div className='fs-5'><b className='pe-1'>Saturday : </b> 9:30 AM – 5:00PM</div>
                         <div className='fs-5'><b className='pe-1'>Sunday :</b> 9:30 AM – 4:00PM</div>

@@ -14,7 +14,6 @@ const Header = () => {
         const storedUsername = localStorage.getItem('username');
         if (storedUsername) {
             setUsername(storedUsername);
-
         }
     }, []);
 
@@ -25,11 +24,17 @@ const Header = () => {
                     <div className='text-div'>
                         <img src={search} alt="Search" style={{ width: '30px', height: '30px' }} />
                     </div>
-                    <div className='text-div'><img src={logo} alt="Logo" className="logo" /></div>
+                    <div className='text-div'>
+                        <img src={logo} alt="Logo" className="logo" />
+                    </div>
                     <div className='icon-container'>
                         <Link to={username ? "/profile" : "/login"}>
                             <img src={profile} alt="Profile" />
-                            <span className='fs-5 about-image'>{username ? username : "Login/Register"}</span>
+                            {username ? (
+                                <span className='fs-5 about-image'>{username}</span>
+                            ) : (
+                                <span className='fs-5 about-image'>Login/Register</span>
+                            )}
                         </Link>
                     </div>
                 </div>

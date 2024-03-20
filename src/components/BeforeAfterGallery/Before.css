@@ -1,68 +1,65 @@
+.before-carousel-container {
+  margin-top: 4vw;
+  padding: 1.5vw 1vw;
+  background-color: #ddd9d1;
+}
+
+.before-carousel-container h1 {
+  font-family: "great vibes", sans-serif;
+  color: #c08b36;
+  font-size: 4vw;
+  text-align: center;
+  padding: 1vw 1vw;
+}
+
+.before-carousel-container h4 {
+  text-align: center;
+  color: #7c6546;
+  font-family: "Merriweather", sans-serif;
+}
+
 .before-carousel {
-    width: 40%;
-    margin: 20px auto;
-    background-color: inherit;
-    padding-bottom: 40px;
-  }
-  
-  .before-carousel .slick-slide {
-    text-align: center;
-    padding-top: 40px;
-   
+  width: 80%;
+  margin: 20px auto;
+  background-color: inherit;
+  padding-bottom: 40px;
 }
 
-  .before-carousel img {
-    max-width: 90%;
-    height: auto;
-    margin-left: 50px;
-  }
-  
-  .before-carousel video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .before-carousel-container{
-    margin-top: 4vw;
-    padding: 1.5vw 1vw;
-    background-color: #ddd9d1;
-  }
-  .before-carousel-container h1{
-    
-    font-family: "great vibes", sans-serif;
-    color: #c08b36;
-    font-size: 4vw;
-    text-align: center;
-    padding: 1vw 1vw;
-
-  }
-  .before-carousel-container h4{
-    text-align: center;
-    color: #7c6546;
-    font-family: "Merriweather",sans-serif;
-  }
-  
-  #video-3 {
-    height: 680px;
-}
-.slick-dots {
-    background-color: inherit;
-   
+.before-carousel .slick-slide {
+  text-align: center;
+  padding-top: 40px;
 }
 
-.slick-dots li button::before {
-    color: black; 
-    font-size: 13px;
-    
+.before-carousel img {
+  max-width: 100%;
+  height: 700px;
+  margin: 0 auto;
 }
 
-.slick-prev:before{
-  display: inline;
+.before-carousel video {
+  max-width: 100%;
+  height: 700px;
 }
+
+@media only screen and (max-width: 768px) {
+  .before-carousel {
+      width: 90%;
+  }
+
+  .before-carousel-container h1 {
+      font-size: 6vw;
+  }
+
+  .before-carousel-container h4 {
+      font-size: 3vw;
+  }
+}
+
+
 .slick-prev:before,
 .slick-next:before {
     color: #8eaf33;
-    font-size: 40px;
+    font-size: 50px; 
 }
 
 .slick-prev:hover:before,

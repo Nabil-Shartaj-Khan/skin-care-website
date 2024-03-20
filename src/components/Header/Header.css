@@ -24,14 +24,21 @@
 
 .icon-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 .icon-container img {
   width: 30px;
   height: 30px;
-  margin-right: 22px;
-  cursor: pointer;
+  margin-bottom: 5px; 
+}
+
+.fs-5 {
+  font-size: 14px; 
+  color: #8a601c !important;
+  text-align: center;
+  font-family: "Poppins",sans-serif;
 
 }
 

@@ -20,7 +20,7 @@
 }
 
 .icon {
-    width: 30px;
+    width: 50px;
     margin-right: 10px;
 }
 
@@ -46,20 +46,19 @@
 .business-hours span {
     font-weight: bold;
     font-size: 20px;
-    font-family: "Lato",sans-serif;
+    font-family: "Lato", sans-serif;
     color: #867357;
     display: block;
     margin-bottom: 10px;
 }
 
-.business-hours div {
+.business-hours-wrapper {
     margin-left: 30px;
 }
 
-.business-hours div div {
+.business-hours-wrapper > div {
     margin-top: 5px;
 }
-
 .contact h3{
     padding-top: 80px;
     padding-left: 80px;
