@@ -1,5 +1,4 @@
 import React from 'react';
-
 import phoneIcon from '../../assets/images/phone-icon.jpg';
 import addressIcon from '../../assets/images/address-icon.jpg';
 import './Location.css';
@@ -7,26 +6,24 @@ import './Location.css';
 const Location = () => {
     return (
         <div className='contact'>
-            <h3 >Contact us :  Enhance Your Skin's Brilliance!</h3>
+            <h3>Contact us : Enhance Your Skin's Brilliance!</h3>
             <div className="location-container">
-                <div className='flex-it'>
-                    <div className="contact-info">
-                        <img className="icon" src={phoneIcon} alt="phone" />
-                        <div className="contact-details">
-                            <div><span style={{ color: "#867357" }}>Phone:</span></div>
-                            <div><span style={{ color: "#8a601c" }} >+61298293232</span></div>
-                        </div>
+                <div className="contact-info">
+                    <img className="icon" src={phoneIcon} alt="phone" />
+                    <div className="contact-details">
+                        <div><span style={{ color: "#867357" }}><b>Phone:</b></span></div>
+                        <div><span style={{ color: "#8a601c" }} >+61298293232</span></div>
                     </div>
-                    <div className="contact-info">
-                        <img className="icon" src={addressIcon} alt="address" />
-                        <div className="contact-details">
-                            <div><span style={{ color: "#867357" }}>Address:</span></div>
-                            <div><span style={{ color: "#8a601c" }}>Shop AG09, 52 Sergeant St, Edmondson Park NSW 2174, Australia</span></div>
-                        </div>
+                </div>
+                <div className="contact-info">
+                    <img className="icon" src={addressIcon} alt="address" />
+                    <div className="contact-details">
+                        <div><span style={{ color: "#867357" }}><b>Address:</b></span></div>
+                        <div><span style={{ color: "#8a601c" }}>Shop AG09, 52 Sergeant St, Edmondson Park NSW 2174, Australia</span></div>
                     </div>
                 </div>
                 <div className="business-hours">
-                    <span>Business Hours:</span>
+                    <span><b>Business Hours:</b></span>
                     <div className="business-hours-wrapper">
                         <div className="fs-5"><b>Friday:</b> 06:00 AM - 09:00 PM</div>
                         <div className="fs-5"><b>Saturday:</b> 06:00 AM - 09:00 PM</div>
@@ -39,7 +36,7 @@ const Location = () => {
                 </div>
             </div>
             <div className='google-map-container pt-4'>
-                <div className='google-map ms-5'>
+                <div className='google-map pe-5'>
                     <iframe
                         title="Google Maps"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.6075784856107!2d150.85735013430104!3d-33.96977139617858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ed97cfcfdb6f%3A0x56529caf12dcdeb0!2sNU%20Skin%20Laser%20%26%20Beauty%20Clinic!5e0!3m2!1sen!2sbd!4v1710756327613!5m2!1sen!2sbd"

@@ -2,20 +2,18 @@
     margin-left: 20vw;
     color: white;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row; 
+    align-items: flex-start;
     max-width: 60%;
 }
 
-.flex-it {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.contact-info,
+.business-hours {
+    flex: 1; 
 }
 
 .contact-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    margin-right: 20px; /* Add margin between contact info and business hours */
 }
 
 .icon {
@@ -38,8 +36,9 @@
 }
 
 .business-hours {
-    margin-top: 20px;
+    
     color: #8a601c;
+    text-align: left; /* Align text to the left */
 }
 
 .business-hours span {
@@ -47,16 +46,16 @@
     font-size: 20px;
     font-family: "Lato", sans-serif;
     color: #867357;
-    display: block;
     margin-bottom: 10px;
 }
 
 .business-hours-wrapper {
-    margin-left: 30px;
+    margin-left: 0;
 }
 
 .business-hours-wrapper > div {
     margin-top: 5px;
+    text-align: left; 
 }
 
 .contact h3 {
@@ -72,8 +71,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 .google-map {
@@ -85,13 +82,10 @@
 }
 
 @media screen and (max-width: 576px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .location-container {
         margin-left: 5vw;
-        max-width: 100%;
+        max-width: 90%;
+        flex-direction: column; /* Change flex direction to column on smaller screens */
     }
 
     .contact h3 {
@@ -101,36 +95,15 @@
     }
 
     .business-hours {
-        margin-top: 10px;
-    }
-
-    .business-hours span {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-
-    .business-hours-wrapper {
-        display: flex;
-        flex-direction: column; 
-        margin-left: 0;
-    }
-
-    .business-hours-wrapper > div {
-        margin-top: 10px;
-        font-size: 16px; 
-    }
-
-    .business-hours-wrapper span {
-        display: inline-block;
-        margin-left: 10px;
+        width: 100%;
+        text-align: left;
     }
 
     .google-map {
         height: 300px;
     }
-
     .google-map-container {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         margin-bottom: 200px;
     }
 }
