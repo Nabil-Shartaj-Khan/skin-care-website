@@ -15,7 +15,7 @@ const Intro = () => {
                 <source src={video} type="video/mp4" />
             </video>
             <div className="overlay">
-                <h2>NU Skin Laser & Beauty Clinic</h2>
+                <h2 className="smaller-section-title">NU Skin Laser & Beauty Clinic</h2>
                 <button className='book-button' onClick={handleClick}>Book an appointment</button>
                 <p>Transforming Beauty, Inside and Out</p>
             </div>
