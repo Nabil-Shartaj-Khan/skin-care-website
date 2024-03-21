@@ -19,6 +19,10 @@ const Appointment = () => {
         }
     }, []);
 
+    const today = new Date();
+    const minDate = today.toISOString().split('T')[0]; // Minimum selectable date
+    const maxDate = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]; // Maximum selectable date
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -73,6 +77,8 @@ const Appointment = () => {
                                     id="date"
                                     value={date}
                                     onChange={(e) => setDate(e.target.value)}
+                                    min={minDate} // Set the minimum selectable date
+                                    max={maxDate} // Set the maximum selectable date
                                     required
                                 />
                             </div>
