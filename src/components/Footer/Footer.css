@@ -21,6 +21,7 @@ footer {
     transition: transform 0.3s ease;
     height: 100px;
     width: 100px;
+    border-radius: 50%;
 }
 
 .footer-container img:hover {

@@ -11,11 +11,34 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://nuskinlaserandbeautyclinic.com.au",
+      "http://localhost:5173",
+    ],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
 );
+
+app.use((req, res, next) => {
+  res.header(
+    "Access-Control-Allow-Origin",
+    "http://nuskinlaserandbeautyclinic.com.au"
+  );
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
+
+app.use(
+  cors({
+    origin: [
+      "http://nuskinlaserandbeautyclinic.com.au",
+      "http://localhost:5173",
+    ],
+  })
+);
+
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cookieParser());
@@ -23,9 +46,10 @@ app.use(express.static("public"));
 
 const db = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "",
-  database: "skincare",
+  user: "nuskinla_root",
+  password: "mynameisnabil",
+  database: "nuskinla_skincare",
+  debug: true,
 });
 
 db.connect((err) => {
@@ -140,9 +164,13 @@ app.get("/api/services/:service_id", (req, res) => {
   db.query(sql, [service_id], (err, result) => {
     if (err) {
       console.error("Error fetching service details:", err);
-      return res
-        .status(500)
-        .json({ message: "Failed to fetch service details" });
+      // Send only the error message
+      return res.status(500).json({
+        message:
+          "Failed to fetch service details. Error: " +
+          err.message +
+          "New Error",
+      });
     }
 
     if (result.length === 0) {
@@ -209,7 +237,7 @@ app.get("/api/appointments/:userId", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

@@ -29,9 +29,10 @@
 }
 
 .logo {
-  height: 60px;
+  height: 70px;
   width: auto;
   margin-right: 70px; 
+  border-radius: 50%;
 }
 
 @media (max-width: 576px) {

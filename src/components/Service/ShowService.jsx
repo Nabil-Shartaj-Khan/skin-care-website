@@ -17,7 +17,9 @@ const ShowService = () => {
     useEffect(() => {
         const fetchService = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/services/${service_id}`);
+                console.log("Fetching service with service ID:", service_id);
+                const response = await axios.get(`http://api.nuskinlaserandbeautyclinic.com.au/api/services/${service_id}`);
+                console.log("Service response:", response.data);
                 setService(response.data);
                 setLoading(false);
                 setError(null);
@@ -30,7 +32,9 @@ const ShowService = () => {
 
         const fetchSubcategories = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/subcategories/${service_id}`);
+                console.log("Fetching subcategories with service ID:", service_id);
+                const response = await axios.get(`http://api.nuskinlaserandbeautyclinic.com.au/api/subcategories/${service_id}`);
+                console.log("Subcategories response:", response.data);
                 setSubcategories(response.data);
             } catch (error) {
                 console.error('Error fetching subcategories:', error);

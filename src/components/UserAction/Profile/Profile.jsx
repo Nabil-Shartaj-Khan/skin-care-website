@@ -14,9 +14,9 @@ const Profile = () => {
             try {
                 const userId = localStorage.getItem('userId');
                 if (userId) {
-                    const response = await axios.get(`http://localhost:5000/api/user/details/${userId}`);
+                    const response = await axios.get(`http://api.nuskinlaserandbeautyclinic.com.au/api/user/details/${userId}`);
                     setUserDetails(response.data);
-                    const bookedAppointmentsResponse = await axios.get(`http://localhost:5000/api/appointments/${userId}`);
+                    const bookedAppointmentsResponse = await axios.get(`http://api.nuskinlaserandbeautyclinic.com.au/api/appointments/${userId}`);
                     setBookedAppointments(bookedAppointmentsResponse.data);
                 } else {
                     console.error('User ID not found in localStorage');
