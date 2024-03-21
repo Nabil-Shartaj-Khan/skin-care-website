@@ -27,7 +27,7 @@
   width: 100%; 
   height: 100%; 
   text-align: center;
-  background-color: rgba(15, 14, 14, 0.986);
+  background-color:#000000be !important;
   color: white;
   opacity: 1;
   z-index: 2;
