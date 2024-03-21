@@ -69,10 +69,17 @@ const Register = () => {
             navigate('/login', { state: { registrationSuccess: true } });
         } catch (error) {
             if (error.response && error.response.data && error.response.data.message) {
-                // Backend returned an error message
-                setErrors({ email: error.response.data.message });
+
+                const errorMessage = error.response.data.message;
+                if (errorMessage === 'Email already exists') {
+
+                    setErrors({ email: `${errorMessage}, login instead.` });
+                } else {
+
+                    setErrors({ email: errorMessage });
+                }
             } else {
-                // Other types of errors
+
                 console.error('Registration failed:', error);
             }
         }
@@ -86,7 +93,7 @@ const Register = () => {
             <div className="register-form">
                 <h2>Register</h2>
                 <form onSubmit={handleSubmit}>
-                    {/* Form fields */}
+
                     <div className="form-group">
                         <label htmlFor="username">Username</label>
                         <input type="text" id="username" name="username" value={formData.username} onChange={handleChange} />

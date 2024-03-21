@@ -82,7 +82,7 @@ const Profile = () => {
                                 ))}
                             </ul>
                         ) : (
-                            <p>No appointments found</p>
+                            <p className="no-appointment">No appointments found</p>
                         )}
 
                         <button className="logout-button mt-5" onClick={handleLogout}>Logout</button>

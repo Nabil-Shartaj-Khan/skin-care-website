@@ -24,24 +24,22 @@ const Login = () => {
             const response = await axios.post('http://localhost:5000/api/login', formData);
             console.log('Login successful:', response.data);
 
-
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('username', formData.username);
             localStorage.setItem('userId', response.data.userId);
-
 
             console.log('Token:', response.data.token);
             console.log('Username:', formData.username);
             console.log('UserID:', response.data.userId);
 
-            navigate('/');
+
+            navigate('/', { replace: true });
             window.location.reload();
         } catch (error) {
             console.error('Login failed:', error);
             setErrorMessage('Invalid username or password. Please try again.');
         }
     };
-
 
     return (
         <div className="login-container">
@@ -59,6 +57,7 @@ const Login = () => {
                         <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} />
                     </div>
                     <button type="submit">Login</button>
+
                     <span className='link-to'>Don't have an account? <Link to={"/register"}>Register</Link> here</span>
                 </form>
             </div>

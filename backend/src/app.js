@@ -44,20 +44,34 @@ app.post("/api/register", (req, res) => {
     return res.status(400).json({ message: "Please fill in all fields" });
   }
 
-  const sql =
-    "INSERT INTO users (username, email, password, location, gender) VALUES (?, ?, ?, ?, ?)";
-  db.query(
-    sql,
-    [username, email, password, location, gender],
-    (err, result) => {
-      if (err) {
-        console.error("Error registering user:", err);
-        return res.status(500).json({ message: "Registration failed" });
-      }
-      console.log("User registered successfully:", result);
-      res.status(201).json({ message: "Registration successful" });
+  const checkEmailQuery = "SELECT COUNT(*) AS count FROM users WHERE email = ?";
+  db.query(checkEmailQuery, [email], (err, result) => {
+    if (err) {
+      console.error("Error checking email:", err);
+      return res.status(500).json({ message: "Registration failed" });
     }
-  );
+
+    const emailExists = result[0].count > 0;
+    if (emailExists) {
+      return res.status(400).json({ message: "Email already exists" });
+    }
+
+    // If email is unique, proceed with user registration
+    const insertUserQuery =
+      "INSERT INTO users (username, email, password, location, gender) VALUES (?, ?, ?, ?, ?)";
+    db.query(
+      insertUserQuery,
+      [username, email, password, location, gender],
+      (err, result) => {
+        if (err) {
+          console.error("Error registering user:", err);
+          return res.status(500).json({ message: "Registration failed" });
+        }
+        console.log("User registered successfully:", result);
+        res.status(201).json({ message: "Registration successful" });
+      }
+    );
+  });
 });
 
 // Login a user
@@ -122,7 +136,6 @@ app.post("/api/appointments", (req, res) => {
 app.get("/api/services/:service_id", (req, res) => {
   const service_id = req.params.service_id;
 
-  // Query the database to fetch service details based on the service_id
   const sql = "SELECT * FROM services WHERE service_id = ?";
   db.query(sql, [service_id], (err, result) => {
     if (err) {

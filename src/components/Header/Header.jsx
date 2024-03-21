@@ -38,7 +38,7 @@ const Header = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container-fluid pt-4">
                     <button
                         className="navbar-toggler"
                         type="button"

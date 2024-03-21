@@ -87,7 +87,7 @@ const ShowService = () => {
                 <h1>{service ? service.service_name : 'Service section'}</h1>
             </div>
 
-            <div className='about-service'>
+            <div className='about-service text-center'>
                 <p>
                     {service ? service.description : `Embark on a journey of possibilities as you delve deeper into our suite of services. Uncover tailored solutions designed to meet your unique needs and aspirations. With each scroll, unlock a wealth of opportunities and possibilities, curated to exceed your expectations. Your satisfaction is our priority, and as you explore further, rest assured that every detail is crafted with care to ensure your experience is nothing short of exceptional. So go ahead, scroll below, and let the adventure begin.`}
                 </p>

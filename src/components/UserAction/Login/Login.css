@@ -93,6 +93,7 @@ button[type="submit"]:hover {
     font-family: "Lato", sans-serif;
     padding-top: 2%;
     text-align: center;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 576px) {
