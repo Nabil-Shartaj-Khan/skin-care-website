@@ -37,7 +37,8 @@ const Login = () => {
             window.location.reload();
         } catch (error) {
             console.error('Login failed:', error);
-            setErrorMessage('Invalid username or password. Please try again.');
+            setErrorMessage('Invalid username or password. Please try again!');
+            setFormData({ username: '', password: '' });
         }
     };
 
