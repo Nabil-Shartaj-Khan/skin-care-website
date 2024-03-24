@@ -20,15 +20,15 @@ const Appointment = () => {
     }, []);
 
     const today = new Date();
-    const minDate = today.toISOString().split('T')[0]; 
-    const maxDate = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]; 
+    const minDate = today.toISOString().split('T')[0];
+    const maxDate = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
             const userId = localStorage.getItem('userId');
             console.log('Data to be sent:', { mobile, date, serviceType, userId });
-            const response = await axios.post('https://api.nuskinlaserandbeautyclinic.com.au/api/appointments', {
+            const response = await axios.post('http://api.nuskinlaserandbeautyclinic.com.au/api/appointments', {
                 mobile,
                 date,
                 serviceType,
@@ -77,8 +77,8 @@ const Appointment = () => {
                                     id="date"
                                     value={date}
                                     onChange={(e) => setDate(e.target.value)}
-                                    min={minDate} 
-                                    max={maxDate} 
+                                    min={minDate}
+                                    max={maxDate}
                                     required
                                 />
                             </div>
