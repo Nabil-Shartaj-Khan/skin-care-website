@@ -55,7 +55,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post('http://api.nuskinlaserandbeautyclinic.com.au/api/register', formData);
+            const response = await axios.post('https://api.nuskinlaserandbeautyclinic.com.au/api/register', formData);
             console.log('Registration successful:', response.data);
 
             setFormData({

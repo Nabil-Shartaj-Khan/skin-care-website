@@ -21,7 +21,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://api.nuskinlaserandbeautyclinic.com.au/api/login', formData);
+            const response = await axios.post('https://api.nuskinlaserandbeautyclinic.com.au/api/login', formData);
             console.log('Login successful:', response.data);
 
             localStorage.setItem('token', response.data.token);
