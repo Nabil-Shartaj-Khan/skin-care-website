@@ -1,6 +1,6 @@
 .location-container {
     margin-left: 20vw;
-    color: white;
+    color: whitesmoke;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -78,6 +78,10 @@
     max-width: 850px;
     height: 500px;
     margin-bottom: 48px;
+}
+
+.contact{
+    background-color: rgb(204, 201, 201);
 }
 
 @media screen and (max-width: 576px) {

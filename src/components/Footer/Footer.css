@@ -6,10 +6,12 @@
     margin-right: auto;
     margin-left: auto;
     color: #726553;
+
 }
 
 footer {
-    background-color: #b3aeaeb0;
+    background-color: rgb(204, 201, 201);
+    margin-top: -16px;
 }
 
 .footer-pg {

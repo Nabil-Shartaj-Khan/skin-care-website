@@ -24,7 +24,7 @@ const Before = () => {
 
     return (
         <div className=''>
-            <div className='before-carousel-container'>
+            <div className='before-carousel-container pt-5'>
                 <h1>Witness the magic of our treatments</h1>
                 <h4>Turning 'Before' into 'After' bliss!"</h4>
                 <div className="before-carousel">

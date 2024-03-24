@@ -1,6 +1,13 @@
 body {
-    background-color: #fafafa;
+    background-color: rgb(204, 201, 201);
     max-width: 100%; 
     overflow-x: hidden; 
+}
+
+
+.loading-message{
+    font-size: 23px;
+    font-family: "Lato",sans-serif;
+    color: black;
 }
 

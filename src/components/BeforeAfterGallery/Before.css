@@ -1,7 +1,7 @@
 .before-carousel-container {
-  margin-top: 4vw;
+ 
   padding: 1.5vw 2vw 3vw ;
-  background-color: #ddd9d1;
+  background-color: rgb(204, 201, 201);
 }
 
 .before-carousel-container h1 {
