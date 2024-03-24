@@ -85,6 +85,24 @@
     text-decoration: none;
 }
 
+.appointment-container{
+    height: 80vh;
+}
+.appointment-text{
+    font-size: 3vw;
+    padding-bottom: 20px;
+    font-family: "Lato",sans-serif;
+    font-weight: bold;
+    
+}
+
+.appointment-koro{
+    font-size: 1.2vw;
+    font-family: "Lato",sans-serif;
+    padding-top: 20px;
+
+}
+
 @media (max-width: 768px) {
     .hello-header {
         font-size: 7vw;
@@ -117,6 +135,9 @@
     }
 
     .big-container {
-        padding-bottom: 20px; /* Add padding to the bottom of big-container to create space for the footer */
+        padding-bottom: 20px; 
+    }
+    .appointment-koro{
+        font-size: 17px;
     }
 }

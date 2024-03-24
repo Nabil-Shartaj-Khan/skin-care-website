@@ -20,8 +20,8 @@ const Appointment = () => {
     }, []);
 
     const today = new Date();
-    const minDate = today.toISOString().split('T')[0]; // Minimum selectable date
-    const maxDate = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]; // Maximum selectable date
+    const minDate = today.toISOString().split('T')[0]; 
+    const maxDate = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]; 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -77,8 +77,8 @@ const Appointment = () => {
                                     id="date"
                                     value={date}
                                     onChange={(e) => setDate(e.target.value)}
-                                    min={minDate} // Set the minimum selectable date
-                                    max={maxDate} // Set the maximum selectable date
+                                    min={minDate} 
+                                    max={maxDate} 
                                     required
                                 />
                             </div>
@@ -110,6 +110,7 @@ const Appointment = () => {
                 <h1 className="appointment-text">Your journey begins here!</h1>
 
                 <Link to={"/login"} className='book-button'>Login/Register</Link>
+                <p className='appointment-koro'>Unlock a world of exclusive benefits! Log in or sign up now.</p>
 
             </div>
         )

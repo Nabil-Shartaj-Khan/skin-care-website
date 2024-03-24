@@ -27,6 +27,7 @@
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+
 }
 
 .about-image {
@@ -35,7 +36,7 @@
     max-height: 360px;
     object-fit: cover;
     max-width: 100%;
-    opacity: 0.6;
+    opacity: 0.6;;
     transition: transform 0.7s ease;
 }
 
@@ -54,7 +55,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0.747) !important;
     color: white;
     text-align: center;
     opacity: 0;

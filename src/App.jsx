@@ -3,7 +3,7 @@ import { Suspense, lazy } from 'react'; // Import lazy and Suspense
 import Header from './components/Header/Header';
 import Footer from "./components/Footer/Footer";
 import NotFound from "./NotFound";
-
+import "./App.css"
 // Lazy load your components
 const LazyIntro = lazy(() => import('./components/Intro/Intro'));
 const LazyAbout = lazy(() => import('./components/About/About'));

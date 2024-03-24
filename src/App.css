@@ -9,5 +9,8 @@ body {
     font-size: 23px;
     font-family: "Lato",sans-serif;
     color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 

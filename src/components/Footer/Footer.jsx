@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="text-light pb-2">
             <div className="footer-container">
-                <hr></hr>
+                <hr className='border border-3 border-secondary'></hr>
                 <div className="row py-5">
                     <div className="col-md-4">
                         <div className="d-flex flex-column">
@@ -33,12 +33,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <hr className="bg-light" />
-            </div>
-
-
-            <div className="text-center">
-                <p className='fs-5 py-3 text-secondary'>Nabil Shartaj Khan &copy; All Rights Reserved  2024</p>
+                <hr className='border border-3 border-secondary' />
             </div>
         </footer>
     );
