@@ -39,9 +39,7 @@ const Location = () => {
                 <div className='google-map pe-5'>
                     <iframe
                         title="Google Maps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1169.8658687816649!2d150.85726628971904!3d-33.96991456933899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ed97cfcfdb6f%3A0x56529caf12dcdeb0!2sNU%20Skin%20Laser%20%26%20Beauty%20Clinic!5e0!3m2!1sen!2sbd!4v1710971684098!5m2!1sen!2sbd"
-                        width="900"
-                        height="450"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1654.439955408646!2d150.857677!3d-33.969926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ed97cfcfdb6f%3A0x56529caf12dcdeb0!2sNU%20Skin%20Laser%20%26%20Beauty%20Clinic!5e0!3m2!1sen!2sbd!4v1711362562896!5m2!1sen!2sbd"
                         style={{ border: "0" }}
                         allowFullScreen=""
                         loading="lazy"

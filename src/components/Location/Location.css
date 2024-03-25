@@ -60,7 +60,7 @@
 .contact h3 {
     padding-top: 40px; 
     padding-left: 80px;
-    font-family: 'Lobster Two', sans-serif;
+    font-family: 'great vibes', sans-serif;
     color: #bd8b3b;
     font-size: 3.9vw;
     margin-bottom: 50px;
@@ -70,21 +70,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; 
 }
 
-.google-map {
+.google-map iframe{
     padding-top: 25px;
-    width: 100%;
-    max-width: 850px;
+    width: 950px; 
     height: 500px;
     margin-bottom: 48px;
-}
+} 
 
 .contact{
     background-color: rgb(204, 201, 201);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 573px) {
     body {
         overflow-x: hidden;
     }
@@ -109,15 +109,7 @@
         text-align: left;
     }
 
-    .google-map {
-        width: 190%; 
-        max-width: none; 
-        height: 300px; 
-        margin-bottom: 20px; 
-    }
 
-    .google-map-container {
-        padding-bottom: 20px;
-        margin-bottom: 140px;
-    }
+}
+
 }
