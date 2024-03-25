@@ -73,16 +73,11 @@
     overflow: hidden; 
 }
 
-.google-map iframe{
-    padding-top: 25px;
-    width: 950px; 
+.google-map iframe {
+    width: 900px;
     height: 500px;
     margin-bottom: 48px;
 } 
-
-.contact{
-    background-color: rgb(204, 201, 201);
-}
 
 @media screen and (max-width: 573px) {
     body {
@@ -101,14 +96,17 @@
         max-width: 90%;
         flex-direction: column;
     }
-
+    .google-map iframe 
+{
+    padding-left: 40px;
+        width: 520px;
+        height: 500px;
+        margin-bottom: 48px;
+    }
 
     .business-hours {
         padding-top: 24px;
         width: 100%;
         text-align: left;
     }
-
-
 }
-
