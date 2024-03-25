@@ -31,31 +31,8 @@ const Header = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="#SkinPackages">Packages</a>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="ShopProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Shop Products
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="ShopProductsDropdown">
-                                <li><a className="dropdown-item" href="#">Cleansers</a></li>
-                                <li><a className="dropdown-item" href="#">Serums</a></li>
-                                <li><a className="dropdown-item" href="#">Moisturisers</a></li>
-                                <li><a className="dropdown-item" href="#">Scrubs</a></li>
-                                <li><a className="dropdown-item" href="#">LED Face Mask</a></li>
-                                <li><a className="dropdown-item" href="#">Intimate Products</a></li>
-                                <li><a className="dropdown-item" href="#">Make Up Removers</a></li>
-                                <li><a className="dropdown-item" href="#">Xfoli8 Mitt</a></li>
-                            </ul>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="ShopFaceKitsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Shop Face Kits
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="ShopFaceKitsDropdown">
-                                <li><a className="dropdown-item" href="#">Item A</a></li>
-                                <li><a className="dropdown-item" href="#">Item B</a></li>
-                                <li><a className="dropdown-item" href="#">Item C</a></li>
-                            </ul>
-                        </li>
+
+
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="SkinTreatmentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Skin Treatments
@@ -63,7 +40,7 @@ const Header = () => {
                             <ul className="dropdown-menu" aria-labelledby="SkinTreatmentsDropdown">
                                 <li><a className="dropdown-item" href="#">Treatment A</a></li>
                                 <li><a className="dropdown-item" href="#">Treatment B</a></li>
-                                {/* Add more treatments as needed */}
+
                             </ul>
                         </li>
                         <li className="nav-item dropdown">

@@ -1,6 +1,9 @@
-import './Intro.css';
-import video from "../../assets/images/video-main.mp4";
+import React, { lazy, Suspense } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Intro.css';
+
+// Lazy load the video component
+const LazyVideo = lazy(() => import('./Lazyvideo'));
 
 const Intro = () => {
     const navigate = useNavigate();
@@ -11,9 +14,10 @@ const Intro = () => {
 
     return (
         <div className="intro" id="intro">
-            <video className="background-video" loop autoPlay muted>
-                <source src={video} type="video/mp4" />
-            </video>
+            <Suspense fallback={<div>Loading video...</div>}>
+                {/* Lazy loaded video component */}
+                <LazyVideo handleClick={handleClick} />
+            </Suspense>
             <div className="overlay">
                 <h2 className="smaller-section-title">NU Skin Laser & Beauty Clinic</h2>
                 <button className='book-button' onClick={handleClick}>Book an appointment</button>

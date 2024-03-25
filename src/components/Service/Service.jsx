@@ -24,7 +24,7 @@ const Service = () => {
             <div className="grid-container">
                 {services.map((service) => (
                     <Link to={`/show_service/${service.service_id}`} key={service.service_id} className="grid-item">
-                        <img src={service.image} alt={service.title} className="about-image" />
+                        <img src={service.image} alt={service.title} className="about-image" loading="lazy" />
                         <div className="grid-overlay">
                             <h2>{service.title}</h2>
                             <p>{service.description}</p>

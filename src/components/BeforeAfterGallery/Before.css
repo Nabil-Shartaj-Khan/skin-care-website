@@ -1,6 +1,5 @@
 .before-carousel-container {
- 
-  padding: 1.5vw 2vw 3vw ;
+  margin-bottom: -280px !important;
   background-color: rgb(204, 201, 201);
 }
 
