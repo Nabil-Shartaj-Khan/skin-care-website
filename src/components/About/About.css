@@ -25,7 +25,7 @@
 }
 
 .carousel-text span {
-    font-family: "great vibes", sans-serif;
+    font-family: "Lobster Two", sans-serif;
     font-size: 4.4vw;
     color: #d39f4a;
     position: relative;
@@ -40,7 +40,7 @@
 .carousel-heading h1 {
     font-size: 3.4vw;
     font-weight: 500;
-    font-family: "great vibes", sans-serif;
+    font-family: "Lobster Two", sans-serif;
     color: #c08b36;
     padding-bottom: 2vw;
 }
@@ -53,7 +53,7 @@
 
 .carousel-service-description {
     margin-bottom: 5px;
-    font-size: 3vw;
+    font-size: 3.2vw;
     line-height: 1.5;
     color: rgb(235, 215, 189);
     font-family: "Merriweather", sans-serif;
@@ -61,8 +61,8 @@
 
 .carousel-second-description {
     font-style: italic;
-    font-size: 2vw; 
-    
+    font-size: 2.3vw; 
+    color: rgb(90, 207, 90);
     font-family: "Merriweather", sans-serif;
 }
 

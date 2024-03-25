@@ -28,7 +28,7 @@ const Appointment = () => {
         try {
             const userId = localStorage.getItem('userId');
             console.log('Data to be sent:', { mobile, date, serviceType, userId });
-            const response = await axios.post('http://api.nuskinlaserandbeautyclinic.com.au/api/appointments', {
+            const response = await axios.post('http://api.nuskinlaserandbeautyclinic.com.au/api/services/2', {
                 mobile,
                 date,
                 serviceType,

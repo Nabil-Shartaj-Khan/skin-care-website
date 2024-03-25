@@ -35,9 +35,10 @@
 
 .overlay h2 {
   margin-top: 2vw; 
-  font-size: 6.5vw;
+  font-size: 5.7vw;
+  font-style: italic;
   margin-bottom: 20px;
-  font-family: "allura", sans-serif;
+  font-family: "Lobster Two", sans-serif;
   color: #d39f4a;
 }
 

@@ -14,8 +14,8 @@ const Contact = () => {
                 <div className="contact-image"></div>
                 <div className="overlay">
                     <h1>Radiant Skin Awaits at Our Clinic</h1>
-                    <p>Book your appointment now!</p>
                     <button className="book-button" onClick={handleClick}>Book an Appointment</button>
+                    <p>Book your appointment now!</p>
                 </div>
             </div>
         </div>

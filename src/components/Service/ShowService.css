@@ -56,6 +56,11 @@
   left: -43px; 
 }
 
+.about-service{
+  padding-top: 20px;
+  height: 60vh;
+}
+
 .new-card {
   border: 2px solid #979682; 
   border-radius: 30px;

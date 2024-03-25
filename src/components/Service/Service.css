@@ -4,7 +4,7 @@
 }
 
 .grid-header {
-    font-family: "great vibes", sans-serif;
+    font-family: "Lobster Two", sans-serif;
     color: #c08b36;
     font-size: 4vw;
     text-align: center;
@@ -36,7 +36,7 @@
     max-height: 360px;
     object-fit: cover;
     max-width: 100%;
-    opacity: 0.6;;
+    opacity: 0.46;
     transition: transform 0.7s ease;
 }
 
