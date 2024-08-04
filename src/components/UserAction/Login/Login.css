@@ -1,0 +1,119 @@
+/* Login.css */
+
+body {
+    background-color: #ccc;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 90%;
+    max-width: 500px;
+    padding: 5%;
+    border: 1px solid #d6d3d3;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    margin-bottom: 5%;
+    font-size: 2.4em;
+    font-family: "Merriweather", sans-serif;
+    text-align: center;
+    color: #d39f4a;
+}
+
+.form-group {
+    margin-bottom: 7%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdbcbc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #964949;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 7%;
+    font-size: 1.1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #b84d4d;
+}
+
+.login-form .link-to {
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.login-form .link-to a {
+    color: #964949;
+    text-decoration: none;
+}
+
+.login-form .link-to a:hover {
+    text-decoration: underline;
+}
+
+.registration-success {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: green;
+}
+
+.error-message {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 576px) {
+    .login-form {
+        width: 90%;
+        padding: 8%;
+    }
+
+    .login-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-group input,
+    button[type="submit"],
+    .login-form .link-to {
+        font-size: 1rem;
+    }
+
+    .registration-success,
+    .error-message {
+        font-size: 1.2rem;
+    }
+}

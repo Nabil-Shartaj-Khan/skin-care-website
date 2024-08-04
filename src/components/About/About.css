@@ -1,0 +1,94 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.877); 
+}
+
+.carousel-container img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 800px;
+    opacity: 0.2;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3vw;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.carousel-text span {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 4.4vw;
+    color: #d39f4a;
+    position: relative;
+    bottom: 80px;
+}
+
+.carousel-heading {
+    padding: 3vw 4vw;
+    background-color: rgb(204, 201, 201);
+}
+
+.carousel-heading h1 {
+    font-size: 3.4vw;
+    font-weight: 500;
+    font-family: "Lobster Two", sans-serif;
+    color: #c08b36;
+    padding-bottom: 2vw;
+}
+
+.carousel-heading h4 {
+    font-size: 2.4vw;
+    font-family: "Merriweather", sans-serif;
+    color: #88683f;
+}
+
+.carousel-service-description {
+    margin-bottom: 5px;
+    font-size: 3.2vw;
+    line-height: 1.5;
+    color: rgb(235, 215, 189);
+    font-family: "Merriweather", sans-serif;
+}
+
+.carousel-second-description {
+    font-style: italic;
+    font-size: 2.3vw; 
+    color: rgb(90, 207, 90);
+    font-family: "Merriweather", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-heading h1 {
+        font-size: 6vw;
+    }
+
+    .carousel-heading h4 {
+        font-size: 4vw;
+    }
+
+    .carousel-text {
+        padding: 2vw;
+    }
+
+    .carousel-text span {
+        font-size: 6vw;
+        bottom: 10px;
+    }
+
+    .carousel-service-description {
+        font-size: 6vw;
+    }
+
+    .carousel-second-description {
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,112 @@
+.location-container {
+    margin-left: 20vw;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 60%;
+}
+
+.contact-info,
+.business-hours {
+    flex: 1;
+}
+
+.contact-info {
+    margin-right: 20px; /* Add margin between contact info and business hours */
+}
+
+.icon {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details span {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-details div {
+    margin-bottom: 5px;
+}
+
+.business-hours {
+    color: #8a601c;
+    text-align: left; /* Align text to the left */
+}
+
+.business-hours span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: #867357;
+    margin-bottom: 10px;
+}
+
+.business-hours-wrapper {
+    margin-left: 0;
+}
+
+.business-hours-wrapper > div {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.contact h3 {
+    padding-top: 40px; 
+    padding-left: 80px;
+    font-family: 'great vibes', sans-serif;
+    color: #bd8b3b;
+    font-size: 3.9vw;
+    margin-bottom: 50px;
+}
+
+.google-map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.google-map iframe {
+    width: 900px;
+    height: 500px;
+    margin-bottom: 48px;
+} 
+
+@media screen and (max-width: 573px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .contact h3 {
+        padding-top: 20px; 
+        padding-left: 20px;
+        font-size: 45px;
+    }
+
+    .location-container {
+        margin-left: 5vw;
+        margin-top: 0; 
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .google-map iframe 
+{
+    padding-left: 40px;
+        width: 520px;
+        height: 500px;
+        margin-bottom: 48px;
+    }
+
+    .business-hours {
+        padding-top: 24px;
+        width: 100%;
+        text-align: left;
+    }
+}

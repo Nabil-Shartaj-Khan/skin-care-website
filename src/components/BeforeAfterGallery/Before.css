@@ -1,0 +1,69 @@
+.before-carousel-container {
+  margin-bottom: -280px !important;
+  background-color: rgb(204, 201, 201);
+}
+
+.before-carousel-container h1 {
+  font-family: "Lobster Two", sans-serif;
+  color: #c08b36;
+  font-size: 4vw;
+  text-align: center;
+  padding: 1vw;
+}
+
+.before-carousel-container h4 {
+  text-align: center;
+  color: #7c6546;
+  font-family: "Merriweather", sans-serif;
+}
+
+.before-carousel {
+  padding-top: 50px; 
+  padding-bottom: 10px; 
+  width: 90%;
+  margin: 20px auto;
+  background-color: inherit;
+}
+
+
+
+.before-carousel .slick-slide {
+  text-align: center;
+}
+
+.before-carousel img,
+.before-carousel video {
+  max-width: 100%;
+  height: auto; 
+  margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #8eaf33;
+    font-size: 30px; 
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #ecb798;
+}
+
+@media only screen and (max-width: 768px) {
+  .before-carousel {
+      width: 90%;
+  }
+
+  .before-carousel-container h1 {
+      font-size: 8vw; 
+  }
+
+  .before-carousel-container h4 {
+      font-size: 4vw;   
+  }
+
+  .slick-prev,
+  .slick-next {
+      display: none;
+  }
+}

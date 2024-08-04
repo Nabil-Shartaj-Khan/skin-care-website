@@ -1,0 +1,89 @@
+.intro {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%; 
+  opacity: 0.6; 
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  text-align: center;
+  background-color:#000000be !important;
+  color: white;
+  opacity: 1;
+  z-index: 2;
+}
+
+.overlay h2 {
+  margin-top: 2vw; 
+  font-size: 5.7vw;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-family: "Lobster Two", sans-serif;
+  color: #d39f4a;
+}
+
+.overlay p {
+  font-size: 2.3vw;
+  color: #F2E1CB;
+  font-family: "Merriweather", sans-serif;
+}
+
+.book-button {
+  padding: 15px 12px 15px 12px;
+  border: 4px solid #BE9382;
+  font-size: 22px;
+  color: #523d39bb;
+  font-family: "Lato", sans-serif;
+  border-radius: 15px;
+  background-color: #F7F4EC;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.book-button:hover {
+  background-color: inherit;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay h2 {
+    margin-top: 20px;
+    font-size: 5vw; 
+  }
+
+  .overlay p {
+    font-size: 4vw;
+  }
+
+  .book-button {
+    font-size: 4vw;
+    margin-top: 20px;
+    padding: 12px;
+  }
+  
+
+  .overlay h2.smaller-section-title {
+    font-size: 8vw;
+  }
+}
