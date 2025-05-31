@@ -27,9 +27,9 @@ app.use(express.static("public"));
 
 const db = mysql.createConnection({
   host: "localhost",
-  user: "nuskinla_root",
-  password: "mynameisnabil",
-  database: "nuskinla_skincare",
+  user: RAW_USER,
+  password:RAW_PASS,
+  database: RAW_DATABASE,
   debug: true,
 });
 
